@@ -8,7 +8,7 @@
       };
 
       window = {
-        opacity = 1.0;
+        opacity = 0.8;
         padding = {
           x = 24;
           y = 24;
@@ -17,7 +17,7 @@
 
       font = {
         normal = {
-          family = "JetBrains Mono Nerd Font";
+          family = "JetBrainsMono Nerd Font";
           style = "Regular";
         };
         size = lib.mkMerge [
@@ -26,13 +26,13 @@
         ];
       };
 
-      dynamic_padding = true;
-      decorations = "full";
-      title = "Terminal";
-      class = {
-        instance = "Alacritty";
-        general = "Alacritty";
-      };
+      # dynamic_padding = true;
+      # decorations = "full";
+      # title = "Terminal";
+      # class = {
+      #   instance = "Alacritty";
+      #   general = "Alacritty";
+      # };
 
       colors = {
         primary = {

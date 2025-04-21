@@ -2,11 +2,14 @@
   description = "Mic - Mac with nix-darwin, home-manager, homebrew";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
-    # nixkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    nixkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     nix-darwin = {
-      url = "github:nix-darwin/nix-darwin/nix-darwin-24.11";
+      # url = "github:nix-darwin/nix-darwin/nix-darwin-24.11";
+      url = "github:nix-darwin/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -15,6 +18,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
+
+  # nix-homebrew = {
+  #   url = "github:zhaofengli-wip/nix-homebrew";
+  # };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, ... }:
   {
@@ -26,7 +33,7 @@
         ./darwin.nix
         ./apps.nix
         ./env/node.nix
-        ./zsh.nix
+        # ./zsh.nix
         ./formula.nix
 
         inputs.home-manager.darwinModules.home-manager

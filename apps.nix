@@ -8,18 +8,24 @@
             cleanup = "zap";
         };
 
-        masApps = {};
+        masApps = {
+            "微信" = 836500024;
+            "企业微信" = 1189898970;
+            "The Unarchiver" = 425424353;
+        };
 
-        brews = [];
+        brews = [
+            "mas"
+        ];
 
         casks = [
             "google-chrome"
-            # "visual-studio-code"
+            "visual-studio-code"
             "snipaste"
             # "iina"
             "obsidian"
-            # "alacritty"
-            # "insomnia" # REST client
+            "alacritty"
+            "insomnia" # REST client
             # "wireshark" # network analyzer
             "font-jetbrains-mono-nerd-font"
             "appcleaner"
