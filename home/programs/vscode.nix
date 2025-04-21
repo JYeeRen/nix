@@ -9,8 +9,10 @@
             github.github-vscode-theme
             pkief.material-icon-theme
             formulahendry.auto-close-tag
+            esbenp.prettier-vscode
+            dbaeumer.vscode-eslint
             # belows not exists on nix pkgs
-            # antfu.unocss 
+            # antfu.unocss
             # antfu.iconify
             # geekabe.iconify-search
             # ms-vscode.vscode-typescript-next
