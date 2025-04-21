@@ -1,5 +1,5 @@
 {
-    git = {
+    programs.git = {
         enable = true;
         ignores = [ "*.swp" ];
         # userName = name;
