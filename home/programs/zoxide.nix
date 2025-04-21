@@ -3,9 +3,9 @@
 
     # home.packages = [ pkgs.zoxide ];
 
-    # programs.zoxide = {
-    #     enable = true;
+    programs.zoxide = {
+        enable = true;
 
-    #     enableZshIntegration = true;
-    # };
+        enableZshIntegration = true;
+    };
 }
