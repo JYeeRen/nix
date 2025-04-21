@@ -4,5 +4,6 @@
         wireguard-tools
         vim
         git
+        zoxide
     ];
 }
