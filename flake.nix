@@ -32,8 +32,8 @@
         ./configuration.nix
         ./darwin.nix
         ./apps.nix
+        # ./env/java.nix
         ./env/node.nix
-        # ./zsh.nix
         ./formula.nix
 
         inputs.home-manager.darwinModules.home-manager

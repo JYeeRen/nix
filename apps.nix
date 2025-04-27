@@ -32,6 +32,7 @@
             "appcleaner"
             "yubico-yubikey-manager"
             "clash-verge-rev"
+            "bilibili"
         ];
     };
 }
