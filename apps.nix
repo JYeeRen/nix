@@ -33,7 +33,7 @@
             "yubico-yubikey-manager"
             "clash-verge-rev"
             "bilibili"
-            "wpsoffice"
+            "wpsoffice-cn"
         ];
     };
 }
